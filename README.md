@@ -6,18 +6,18 @@ The following are some brief instructions on how to get this web application up 
 The following steps are going to assume you have Node.js installed. If that's not the case they have excellent documentation and installation software for both mac and windows. So head over to [their](https://nodejs.org/en/) website to get a fresh install and when you're done with that we can move onto the next steps.
 
 ### Steps:
-1. Our first step will to be either clone this repository via terminal or command prompt or to download the zip above. Below is the command necessary to clone the repository. Also it should be noted that if you downloaded the zip it may be best to unarchive it upon download. 
+1. Our first step will to be either clone this repository via terminal or command prompt or to download the zip above. Below is the command necessary to clone the repository. If you would like to go the cloning route and don't have git installed here's a [link](https://git-scm.com/downloads) to their downloads which also have great instructions. Also it should be noted that if you downloaded the zip it may be best to unarchive it upon download. 
 
     ```
     git clone https://github.com/wootencl/WebApp_Psych_Est_And_Providers.git
     ```
 
-2. The next step will involve node or more specifically the node package manager npm (which is thankfully bundled into each node install). Below is the code to install the node dependencies for this web application: 
+2. The next step will involve node or more specifically the node package manager npm (which is thankfully bundled into each node install). If your on windows it may be best to open up the Node.js command prompt provided with the node download (located within the Node.js folder). Below is the code to install the node dependencies for this web application: 
 
     ```
     // Before downloading the dependencies you need to be in the project's root directory
     // A command similiar to the following should get you there
-    cd ~/('Downloads' or the directory you cloned into)/WebApp_Psych_Est_And_Providers
+    cd ~('Downloads' or the directory you cloned into)/WebApp_Psych_Est_And_Providers
 
     npm install express
     npm install pokitdok-nodejs
