@@ -1,0 +1,86 @@
+/* I like vertically and horizontally centering things */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.verticalParent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#parentWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+#displayBoxParent {
+  background-color: #333;
+  color: #FFF;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+#title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#instructions {
+  font-size: 0.9em;
+  border-top: 0.1em solid #FFF;
+  border-bottom: 0.1em solid #FFF;
+}
+
+#button {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: right;
+}
+
+#submitButton {
+  /* Source: http://www.cssmatic.com/box-shadow */
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(0,96,128,1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(0,96,128,1);
+  box-shadow: 0px 3px 0px 0px rgba(0,96,128,1);
+  padding: 0.3em;
+  border-radius: 5px;
+  background-color: #008CBA;
+}
+
+#submitButton:hover {
+    background-color: #007399;
+}
+
+#resultsParent {
+  height: 15em;
+}
+
+#results {
+  height: 100%;
+  background: #FFF;
+  color: #000;
+  overflow: scroll;
+}
+
+#startDiv {
+  text-align: center;
+}
+
+#endDiv {
+  display: none;
+}
+
+#bottomRow {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  border-top: 0.1em solid #FFF;
+}

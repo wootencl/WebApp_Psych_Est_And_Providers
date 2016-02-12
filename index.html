@@ -1,0 +1,68 @@
+<!-- Used essentially the same template I created for the other applicaiton -->
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charleston Psych. Tool</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+
+    <div class="row" class="verticalParent" id="parentWrapper">
+      <div class="small-10 large-8 small-centered columns vertical" id="displayBoxParent">
+        <div class="row">
+          <div class="small-11 small-centered columns" id="title">
+            Charleston Psych. Diagnosis Estimate and Psychologists Finder
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 0.6em;">
+          <div class="small-11 small-centered columns" id="instructions">
+            <div class="row">
+              <div class="small-10 columns">
+                Instructions: Push that button to the right and we can supply you with an up-to-date offering of the average price of a psychiatric diagnosis in Charleston and a list of psychologists within a 20 mile radius of the Charleston area.
+              </div>
+              <div class="small-2 small-centered columns verticalParent" id="button">
+                <button class="vertical" id="submitButton" type="button" onclick="pokitDokApp.generate();">
+                  Generate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-11 small-centered columns" id="resultsParent">
+            <div class="row" style="height:100%;">
+              <div class="small-12 columns" style="height:100%;">
+                <div class="verticalParent" id="results">
+                  <div class="vertical" id="startDiv">
+                    Your results will be here.
+                  </div>
+                  <div id="endDiv">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-11 small-centered columns" id="bottomRow">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/underscore.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      window.onload = function() {
+        pokitDokApp.init();
+      }
+    </script>
+  </body>
+</html>
