@@ -1,22 +1,35 @@
-# Instructions 
+# Setup Instructions 
 
-Here are some instructions to get this app up and running. 
+The following are some brief instructions on how to get this web application up and running. 
 
 ## Prerequisite:
-The following steps are going to assume you have Node.js installed. If that's not the case you may want to head over to their [site](https://nodejs.org/en/download/) and get a fresh install. 
+The following steps are going to assume you have Node.js installed. If that's not the case they have excellent documentation and installers for both mac and windows. So head over to [their](https://nodejs.org/en/) website to get a fresh install and when you're done with that we can move onto the next steps.
 
 ### Steps:
-* First you'll want to either clone this repository via terminal (or command line) onto your computer or download the zip which should be an option above.
-* Now in terminal navigate to the directory that contains the cloned/downloaded files and run the following commands to download the remaining dependencies:
+1. Our first step will to be either clone this repository via terminal or command prompt or to download the zip above. Below is the command necessary to clone the repository. Also it should be noted that if you downloaded the zip it may be best to unarchive it upon download. 
+
 ```
+git clone https://github.com/wootencl/WebApp_Psych_Est_And_Providers.git
+```
+
+2. The next step will involve node or more specifically the node package manager npm (which is thankfully bundled into each node install). Below is the code to install the node dependencies for this web application: 
+
+```
+// To navigate into the directory with the recently downloaded project you're going to have to execute a command similiar to the following:
+cd ~/Downloads/WebApp_Psych_Est_And_Providers
+
 npm install express
-npm install body-parser
 npm install pokitdok-nodejs
 ```
-* The above commands will download locally the node_modules needed by the project.
-* Once those are installed type the following into your terminal to get your server up and running:
+
+3. These commands will download locally the node_modules needed by the project. 
+4. Now that you have all the dependencies installed you are almost ready to use the web application. You must next type the following into terminal or the command prompt:
+
 ```
 node server.js
 ```
-* This above should cause the following to output into terminal: "```App listening at http://:::8081```"
-* Lastly, navigate to ```http://127.0.0.1:8081/index.html``` in your browser and the app will be there.
+
+5. The above command will fire up a node server and should cause the following to output into terminal: "```App listening at http://:::8081```"
+6. The last and final step should be to navigate to ```http://127.0.0.1:8081/index.html``` in your browser of choice and the app will be there. 
+
+That's it. You now can get up-to-date price of a psychiatric diagnosis in Charleston and in addition get a list of doctors specializing in Psychology in the Charleston area. 
