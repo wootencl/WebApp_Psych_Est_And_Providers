@@ -12,7 +12,7 @@ The following steps are going to assume you have Node.js installed. If that's no
     git clone https://github.com/wootencl/WebApp_Psych_Est_And_Providers.git
     ```
 
-2. The next step will involve node or more specifically the node package manager npm (which is thankfully bundled into each node install). If your on windows it may be best to open up the Node.js command prompt provided with the node download (located within the Node.js folder). Below is the code to install the node dependencies for this web application: 
+2. The next step will involve node or more specifically the node package manager, npm, (which is thankfully bundled into each node install). If you're on windows it may be best to open up the Node.js command prompt provided with the node download (located within the Node.js folder). Below is the code to install the node dependencies for this web application: 
 
     ```
     // Before downloading the dependencies you need to be in the project's root directory
